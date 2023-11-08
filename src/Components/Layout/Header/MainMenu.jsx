@@ -15,23 +15,21 @@ const MainMenu = () => {
       }}
     >
       {SECTIONS.map((section) => (
-        <>
-          <Link
-            color="inherit"
-            noWrap
-            key={section}
-            variant="body2"
-            href={section.url}
-            sx={{
-              p: 1,
-              flexShrink: 0,
-              textDecoration: "none",
-              marginX: "auto",
-            }}
-          >
-            {section}
-          </Link>
-        </>
+        <Link
+          key={`menu-item-${section}`}
+          color="inherit"
+          // nowrap="true"
+          variant="body2"
+          href={section.url}
+          sx={{
+            p: 1,
+            flexShrink: 0,
+            textDecoration: "none",
+            marginX: "auto",
+          }}
+        >
+          {section}
+        </Link>
       ))}
     </Toolbar>
   );

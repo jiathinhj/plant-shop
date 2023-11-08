@@ -29,18 +29,24 @@ const ToggleColorMode = ({ children }) => {
             ? {
                 // palette values for light mode
                 primary: {
-                  main: "#0a2a19",
+                  main: "#2F7751",
                 },
                 secondary: { main: "#f8bbd0" },
                 divider: grey[200],
                 text: {
                   primary: grey[900],
-                  secondary: grey[800],
+                  secondary: grey[700],
                 },
               }
             : {
                 primary: {
-                  main: "#0a2a19",
+                  main: "#2F7751",
+                },
+                secondary: { main: "#b2a852" },
+                divider: grey[800],
+                text: {
+                  primary: grey[200],
+                  secondary: grey[400],
                 },
               }),
         },

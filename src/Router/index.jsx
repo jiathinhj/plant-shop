@@ -2,7 +2,9 @@ import React from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "../Components/Layout";
 import ProductPage from "../Components/Pages/ProductPage";
-import HomeCarousel from "../Components/Layout/HomeCarousel";
+import LoginPage from "../Components/Pages/LoginPage";
+import HomePage from "../Components/Pages/HomePage";
+import SingUpPage from "../Components/Pages/SignUpPage";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -12,7 +14,7 @@ const Router = () => {
       children: [
         {
           path: "/",
-          element: <HomeCarousel />,
+          element: <HomePage />,
         },
         {
           path: "/products",
@@ -20,6 +22,8 @@ const Router = () => {
         },
       ],
     },
+    { path: "/login", element: <LoginPage /> },
+    { path: "/signup", element: <SingUpPage /> },
   ]);
   return <RouterProvider router={router} />;
 };

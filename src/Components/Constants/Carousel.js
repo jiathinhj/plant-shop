@@ -20,11 +20,11 @@ export const ITEMS = [
         contentPosition: "middle",
         Items: [
             {
-                Name: "Tree",
+                Name: "Tree1",
                 Image: "https://source.unsplash.com/featured/?leaf",
             },
             {
-                Name: "Tree",
+                Name: "Tree2",
                 Image: "https://source.unsplash.com/featured/?flowers",
             },
         ],
@@ -35,11 +35,11 @@ export const ITEMS = [
         contentPosition: "right",
         Items: [
             {
-                Name: "Tree",
+                Name: "Tree3",
                 Image: "https://source.unsplash.com/featured/?plants",
             },
             {
-                Name: "Tree",
+                Name: "Tree4",
                 Image: "https://source.unsplash.com/featured/?plant",
             },
         ],

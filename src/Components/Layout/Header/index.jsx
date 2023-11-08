@@ -126,7 +126,7 @@ function Header() {
         <Box
           color="inherit"
           align="center"
-          noWrap
+          // nowrap="true"
           sx={{
             flex: 1,
             fontFamily: "Pacifico, cursive",
